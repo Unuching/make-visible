@@ -1,11 +1,4 @@
-const myPara = document.getElementById("para");
-const myButton = document.getElementById("btn");
-
-// function showpara() {
-//   myButton.addEventListener("click", () => {
-//     myPara.style.visibility = "visible";
-//   });
-// }
-function showpara() {
-  myPara.style.visibility = "visible";
+function showPara() {
+  const para = document.getElementById("para");
+  para.classList.add("show"); // Add the "show" class to trigger the transition
 }

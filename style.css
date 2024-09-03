@@ -1,6 +1,7 @@
 body {
   background-color: grey;
 }
+
 h1 {
   color: rgb(183, 255, 0);
 }
@@ -8,8 +9,26 @@ h1 {
 #btn {
   font-size: x-large;
   font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
 }
+
+#btn:hover {
+  background-color: darkgrey;
+}
+
 #para {
   color: darkgreen;
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s ease, visibility 1s ease;
+  margin-top: 20px;
+}
+
+#para.show {
+  opacity: 1;
+  visibility: visible;
 }
